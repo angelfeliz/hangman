@@ -1,56 +1,51 @@
 doctype html
 html
-  head
-  link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
-  link(rel="stylesheet" type="text/css" href="css/style.css")
-  body
-    div#hangman_content.content
-      div#head_man_div 
-        div.add_height
-      div#head     
-      div#body
-        div#right_arm
-        div#left_arm
-      div#leg
-        div#right_leg
-        div#left_leg  
-      div#body_man_div        
-      div#foot_man_div
-      
-      div#main_play_area 
-      
-      div#alphabet_container
-          div.row
-            div.col-lg-1#A A          
-            div.col-lg-1 B
-            div.col-lg-1 C
-            div.col-lg-1 D
-            div.col-lg-1 E
-            div.col-lg-1 F
-            div.col-lg-1 G
-            div.col-lg-1 H
-            div.col-lg-1 I
-            div.col-lg-1 J
-            div.col-lg-1 K
-            div.col-lg-1 L           
-          div.row
-            div.col-lg-1 M
-            div.col-lg-1 N
-            div.col-lg-1 O
-            div.col-lg-1 P
-            div.col-lg-1 Q
-            div.col-lg-1 R
-            div.col-lg-1 S
-            div.col_lg-1 T
-            div.col-lg-1 U
-            div.col-lg-1 V
-            div.col-lg-1 W
-            div.col-lg-1 X
-            div.col-lg-1 Y
-            div.col-lg-1 Z
-           
-      script(src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous")
-      script(src="js/main.js")
-      
-      
-    
+ head
+ link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+ link(rel='stylesheet', type='text/css', href='css/style.css')
+ body
+   #hangman_content.content
+     #head_man_div
+       .add_height
+     #head.hidden_part     
+     #body.hidden_part
+       #right_arm.hidden_part
+       #left_arm.hidden_part
+     #leg
+       #right_leg.hidden_part
+       #left_leg.hidden_part  
+     #body_man_div        
+     #foot_man_div
+     #main_play_area  
+     #alphabet_container
+       .row
+         #A.col-md-1.pickedLetter A
+         #B.col-md-1.pickedLetter B
+         #C.col-md-1.pickedLetter C
+         #D.col-md-1.pickedLetter D
+         #E.col-md-1.pickedLetter E
+         #F.col-md-1.pickedLetter F
+         #G.col-md-1.pickedLetter G
+         #H.col-md-1.pickedLetter H
+         #I.col-md-1.pickedLetter I
+         #J.col-md-1.pickedLetter J
+         #K.col-md-1.pickedLetter K
+         #L.col-md-1.pickedLetter L
+       .row
+         #M.col-md-1.pickedLetter M
+         #N.col-md-1.pickedLetter N
+         #O.col-md-1.pickedLetter O
+         #P.col-md-1.pickedLetter P
+         #Q.col-md-1.pickedLetter Q
+         #R.col-md-1.pickedLetter R
+         #S.col-md-1.pickedLetter S
+         #T.col-md-1.pickedLetter T
+         #U.col-md-1.pickedLetter U
+         #V.col-md-1.pickedLetter V
+         #W.col-md-1.pickedLetter W
+         #X.col-md-1.pickedLetter X
+       .row
+         #Y.col-md-6.pickedLetter Y
+         #Z.col-md-6.pickedLetter Z
+     script(src='http://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+     script(src='js/main.js')

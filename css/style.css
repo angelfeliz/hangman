@@ -106,3 +106,7 @@
 .col-md-1, .col-md-6 {
   text-align: center;
 }
+
+.hidden_part {
+  display: none;
+}
