@@ -10,13 +10,10 @@ var splitWordAddToView =  function(word){
 
 splitWordAddToView();
 var countHits = 0;
-var countInnerHits = 0;
 var banHits = false;
 $('.pickedLetter').click(function (){
    var x = 0;
    var collectionOfScretLetters = $(".letter_box");
-   //console.log(collectionOfScretLetters);
-//secreteLetter
    for(var y = 0; y < collectionOfScretLetters.length; y++){
      var splitStringClass = collectionOfScretLetters[y].className.split(' ');
         if(splitStringClass[0] === 'letter_' + this.id.toLowerCase()){
@@ -59,7 +56,6 @@ $('.pickedLetter').click(function (){
      }
    }
    banHits=false;
-
 })
 
 });
